@@ -14,6 +14,12 @@
 		7F1ADFAF1F874F7D00C3F216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1ADFAD1F874F7D00C3F216 /* Main.storyboard */; };
 		7F1ADFBA1F874F7D00C3F216 /* ProductiveXcodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1ADFB91F874F7D00C3F216 /* ProductiveXcodeTests.m */; };
 		7F1ADFC51F874F7D00C3F216 /* ProductiveXcodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1ADFC41F874F7D00C3F216 /* ProductiveXcodeUITests.m */; };
+		7F1ADFD91F87501200C3F216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1ADFD81F87501200C3F216 /* Cocoa.framework */; };
+		7F1ADFDF1F87501200C3F216 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1ADFDE1F87501200C3F216 /* SourceEditorExtension.m */; };
+		7F1ADFE21F87501200C3F216 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1ADFE11F87501200C3F216 /* SourceEditorCommand.m */; };
+		7F1ADFE61F87501200C3F216 /* RunWhenSave.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7F1ADFD61F87501200C3F216 /* RunWhenSave.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7F1ADFEC1F8776F900C3F216 /* uncrustify in Resources */ = {isa = PBXBuildFile; fileRef = 7F1ADFEB1F8776F900C3F216 /* uncrustify */; };
+		7F1ADFEE1F87A0FE00C3F216 /* uncrustify.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 7F1ADFED1F87A0FE00C3F216 /* uncrustify.cfg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +37,28 @@
 			remoteGlobalIDString = 7F1ADF9E1F874F7D00C3F216;
 			remoteInfo = ProductiveXcode;
 		};
+		7F1ADFE41F87501200C3F216 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F1ADF971F874F7D00C3F216 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F1ADFD51F87501200C3F216;
+			remoteInfo = RunWhenSave;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7F1ADFEA1F87501200C3F216 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7F1ADFE61F87501200C3F216 /* RunWhenSave.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7F1ADF9F1F874F7D00C3F216 /* ProductiveXcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductiveXcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +76,16 @@
 		7F1ADFC01F874F7D00C3F216 /* ProductiveXcodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductiveXcodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1ADFC41F874F7D00C3F216 /* ProductiveXcodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductiveXcodeUITests.m; sourceTree = "<group>"; };
 		7F1ADFC61F874F7D00C3F216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F1ADFD61F87501200C3F216 /* RunWhenSave.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RunWhenSave.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F1ADFD81F87501200C3F216 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7F1ADFDC1F87501200C3F216 /* RunWhenSave.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RunWhenSave.entitlements; sourceTree = "<group>"; };
+		7F1ADFDD1F87501200C3F216 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		7F1ADFDE1F87501200C3F216 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		7F1ADFE01F87501200C3F216 /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		7F1ADFE11F87501200C3F216 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		7F1ADFE31F87501200C3F216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F1ADFEB1F8776F900C3F216 /* uncrustify */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = uncrustify; sourceTree = "<group>"; };
+		7F1ADFED1F87A0FE00C3F216 /* uncrustify.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uncrustify.cfg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +110,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7F1ADFD31F87501200C3F216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1ADFD91F87501200C3F216 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +127,8 @@
 				7F1ADFA11F874F7D00C3F216 /* ProductiveXcode */,
 				7F1ADFB81F874F7D00C3F216 /* ProductiveXcodeTests */,
 				7F1ADFC31F874F7D00C3F216 /* ProductiveXcodeUITests */,
+				7F1ADFDA1F87501200C3F216 /* RunWhenSave */,
+				7F1ADFD71F87501200C3F216 /* Frameworks */,
 				7F1ADFA01F874F7D00C3F216 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +139,7 @@
 				7F1ADF9F1F874F7D00C3F216 /* ProductiveXcode.app */,
 				7F1ADFB51F874F7D00C3F216 /* ProductiveXcodeTests.xctest */,
 				7F1ADFC01F874F7D00C3F216 /* ProductiveXcodeUITests.xctest */,
+				7F1ADFD61F87501200C3F216 /* RunWhenSave.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +185,37 @@
 			path = ProductiveXcodeUITests;
 			sourceTree = "<group>";
 		};
+		7F1ADFD71F87501200C3F216 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F1ADFD81F87501200C3F216 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F1ADFDA1F87501200C3F216 /* RunWhenSave */ = {
+			isa = PBXGroup;
+			children = (
+				7F1ADFED1F87A0FE00C3F216 /* uncrustify.cfg */,
+				7F1ADFEB1F8776F900C3F216 /* uncrustify */,
+				7F1ADFDD1F87501200C3F216 /* SourceEditorExtension.h */,
+				7F1ADFDE1F87501200C3F216 /* SourceEditorExtension.m */,
+				7F1ADFE01F87501200C3F216 /* SourceEditorCommand.h */,
+				7F1ADFE11F87501200C3F216 /* SourceEditorCommand.m */,
+				7F1ADFE31F87501200C3F216 /* Info.plist */,
+				7F1ADFDB1F87501200C3F216 /* Supporting Files */,
+			);
+			path = RunWhenSave;
+			sourceTree = "<group>";
+		};
+		7F1ADFDB1F87501200C3F216 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F1ADFDC1F87501200C3F216 /* RunWhenSave.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,10 +226,12 @@
 				7F1ADF9B1F874F7D00C3F216 /* Sources */,
 				7F1ADF9C1F874F7D00C3F216 /* Frameworks */,
 				7F1ADF9D1F874F7D00C3F216 /* Resources */,
+				7F1ADFEA1F87501200C3F216 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7F1ADFE51F87501200C3F216 /* PBXTargetDependency */,
 			);
 			name = ProductiveXcode;
 			productName = ProductiveXcode;
@@ -193,6 +274,23 @@
 			productReference = 7F1ADFC01F874F7D00C3F216 /* ProductiveXcodeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7F1ADFD51F87501200C3F216 /* RunWhenSave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F1ADFE71F87501200C3F216 /* Build configuration list for PBXNativeTarget "RunWhenSave" */;
+			buildPhases = (
+				7F1ADFD21F87501200C3F216 /* Sources */,
+				7F1ADFD31F87501200C3F216 /* Frameworks */,
+				7F1ADFD41F87501200C3F216 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RunWhenSave;
+			productName = RunWhenSave;
+			productReference = 7F1ADFD61F87501200C3F216 /* RunWhenSave.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,7 +302,7 @@
 				TargetAttributes = {
 					7F1ADF9E1F874F7D00C3F216 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = E84CCSVK2F;
+						DevelopmentTeam = UY8HGLAGYV;
 						ProvisioningStyle = Automatic;
 					};
 					7F1ADFB41F874F7D00C3F216 = {
@@ -218,6 +316,11 @@
 						DevelopmentTeam = E84CCSVK2F;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 7F1ADF9E1F874F7D00C3F216;
+					};
+					7F1ADFD51F87501200C3F216 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = UY8HGLAGYV;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -237,6 +340,7 @@
 				7F1ADF9E1F874F7D00C3F216 /* ProductiveXcode */,
 				7F1ADFB41F874F7D00C3F216 /* ProductiveXcodeTests */,
 				7F1ADFBF1F874F7D00C3F216 /* ProductiveXcodeUITests */,
+				7F1ADFD51F87501200C3F216 /* RunWhenSave */,
 			);
 		};
 /* End PBXProject section */
@@ -262,6 +366,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F1ADFD41F87501200C3F216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1ADFEE1F87A0FE00C3F216 /* uncrustify.cfg in Resources */,
+				7F1ADFEC1F8776F900C3F216 /* uncrustify in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +407,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7F1ADFD21F87501200C3F216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1ADFDF1F87501200C3F216 /* SourceEditorExtension.m in Sources */,
+				7F1ADFE21F87501200C3F216 /* SourceEditorCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -306,6 +428,11 @@
 			isa = PBXTargetDependency;
 			target = 7F1ADF9E1F874F7D00C3F216 /* ProductiveXcode */;
 			targetProxy = 7F1ADFC11F874F7D00C3F216 /* PBXContainerItemProxy */;
+		};
+		7F1ADFE51F87501200C3F216 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F1ADFD51F87501200C3F216 /* RunWhenSave */;
+			targetProxy = 7F1ADFE41F87501200C3F216 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -414,12 +541,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = E84CCSVK2F;
+				DEVELOPMENT_TEAM = UY8HGLAGYV;
 				INFOPLIST_FILE = ProductiveXcode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ibestv.ProductiveXcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -427,12 +556,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = E84CCSVK2F;
+				DEVELOPMENT_TEAM = UY8HGLAGYV;
 				INFOPLIST_FILE = ProductiveXcode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ibestv.ProductiveXcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -490,6 +621,38 @@
 			};
 			name = Release;
 		};
+		7F1ADFE81F87501200C3F216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RunWhenSave/RunWhenSave.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UY8HGLAGYV;
+				INFOPLIST_FILE = RunWhenSave/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = ibestv.ProductiveXcode.RunWhenSave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7F1ADFE91F87501200C3F216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RunWhenSave/RunWhenSave.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UY8HGLAGYV;
+				INFOPLIST_FILE = RunWhenSave/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = ibestv.ProductiveXcode.RunWhenSave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -509,6 +672,7 @@
 				7F1ADFCB1F874F7D00C3F216 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F1ADFCC1F874F7D00C3F216 /* Build configuration list for PBXNativeTarget "ProductiveXcodeTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +681,7 @@
 				7F1ADFCE1F874F7D00C3F216 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F1ADFCF1F874F7D00C3F216 /* Build configuration list for PBXNativeTarget "ProductiveXcodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +690,16 @@
 				7F1ADFD11F874F7D00C3F216 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F1ADFE71F87501200C3F216 /* Build configuration list for PBXNativeTarget "RunWhenSave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F1ADFE81F87501200C3F216 /* Debug */,
+				7F1ADFE91F87501200C3F216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
