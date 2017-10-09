@@ -32,25 +32,33 @@
 					<key>XCSourceEditorCommandClassName</key>
 					<string>SourceEditorCommand</string>
 					<key>XCSourceEditorCommandIdentifier</key>
-					<string>wrap</string>
-					<key>XCSourceEditorCommandName</key>
-					<string>Wrap</string>
-				</dict>
-				<dict>
-					<key>XCSourceEditorCommandClassName</key>
-					<string>SourceEditorCommand</string>
-					<key>XCSourceEditorCommandIdentifier</key>
-					<string>preference</string>
-					<key>XCSourceEditorCommandName</key>
-					<string>Preference</string>
-				</dict>
-				<dict>
-					<key>XCSourceEditorCommandClassName</key>
-					<string>SourceEditorCommand</string>
-					<key>XCSourceEditorCommandIdentifier</key>
 					<string>format</string>
 					<key>XCSourceEditorCommandName</key>
 					<string>Format</string>
+				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>SourceEditorCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>wrap-comment</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>/**/</string>
+				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>SourceEditorCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>wrap-preprocess-if-0</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>#if#endif</string>
+				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>SourceEditorCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>wrap-preprocess-if-debug</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>#ifdef#endif</string>
 				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>

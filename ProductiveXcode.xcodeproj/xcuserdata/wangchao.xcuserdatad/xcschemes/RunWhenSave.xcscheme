@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7F1ADFD51F87501200C3F216"
-               BuildableName = "RunWhenSave.appex"
-               BlueprintName = "RunWhenSave"
+               BuildableName = "Runy&apos;s Plugins.appex"
+               BlueprintName = "Runy&apos;s Plugins"
                ReferencedContainer = "container:ProductiveXcode.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -30,8 +30,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7F1ADF9E1F874F7D00C3F216"
-               BuildableName = "ProductiveXcode.app"
-               BlueprintName = "ProductiveXcode"
+               BuildableName = "Runy&apos;s Plugins Host.app"
+               BlueprintName = "Runy&apos;s Plugins Host"
                ReferencedContainer = "container:ProductiveXcode.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -49,8 +49,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7F1ADFD51F87501200C3F216"
-            BuildableName = "RunWhenSave.appex"
-            BlueprintName = "RunWhenSave"
+            BuildableName = "Runy&apos;s Plugins.appex"
+            BlueprintName = "Runy&apos;s Plugins"
             ReferencedContainer = "container:ProductiveXcode.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,7 +61,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = ""
       selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -78,8 +77,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7F1ADF9E1F874F7D00C3F216"
-            BuildableName = "ProductiveXcode.app"
-            BlueprintName = "ProductiveXcode"
+            BuildableName = "Runy&apos;s Plugins Host.app"
+            BlueprintName = "Runy&apos;s Plugins Host"
             ReferencedContainer = "container:ProductiveXcode.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -98,8 +97,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7F1ADF9E1F874F7D00C3F216"
-            BuildableName = "ProductiveXcode.app"
-            BlueprintName = "ProductiveXcode"
+            BuildableName = "Runy&apos;s Plugins Host.app"
+            BlueprintName = "Runy&apos;s Plugins Host"
             ReferencedContainer = "container:ProductiveXcode.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

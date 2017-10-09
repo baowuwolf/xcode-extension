@@ -17,7 +17,7 @@
 		7F1ADFD91F87501200C3F216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1ADFD81F87501200C3F216 /* Cocoa.framework */; };
 		7F1ADFDF1F87501200C3F216 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1ADFDE1F87501200C3F216 /* SourceEditorExtension.m */; };
 		7F1ADFE21F87501200C3F216 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1ADFE11F87501200C3F216 /* SourceEditorCommand.m */; };
-		7F1ADFE61F87501200C3F216 /* RunWhenSave.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7F1ADFD61F87501200C3F216 /* RunWhenSave.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7F1ADFE61F87501200C3F216 /* Runy's Plugins.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7F1ADFD61F87501200C3F216 /* Runy's Plugins.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7F1ADFEC1F8776F900C3F216 /* uncrustify in Resources */ = {isa = PBXBuildFile; fileRef = 7F1ADFEB1F8776F900C3F216 /* uncrustify */; };
 		7F1ADFEE1F87A0FE00C3F216 /* uncrustify.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 7F1ADFED1F87A0FE00C3F216 /* uncrustify.cfg */; };
 /* End PBXBuildFile section */
@@ -53,7 +53,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				7F1ADFE61F87501200C3F216 /* RunWhenSave.appex in Embed App Extensions */,
+				7F1ADFE61F87501200C3F216 /* Runy's Plugins.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,7 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7F1ADF9F1F874F7D00C3F216 /* ProductiveXcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductiveXcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F1ADF9F1F874F7D00C3F216 /* Runy's Plugins Host.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Runy's Plugins Host.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1ADFA21F874F7D00C3F216 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7F1ADFA31F874F7D00C3F216 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7F1ADFA61F874F7D00C3F216 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		7F1ADFC01F874F7D00C3F216 /* ProductiveXcodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductiveXcodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1ADFC41F874F7D00C3F216 /* ProductiveXcodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductiveXcodeUITests.m; sourceTree = "<group>"; };
 		7F1ADFC61F874F7D00C3F216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F1ADFD61F87501200C3F216 /* RunWhenSave.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RunWhenSave.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F1ADFD61F87501200C3F216 /* Runy's Plugins.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Runy's Plugins.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1ADFD81F87501200C3F216 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		7F1ADFDC1F87501200C3F216 /* RunWhenSave.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RunWhenSave.entitlements; sourceTree = "<group>"; };
 		7F1ADFDD1F87501200C3F216 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
@@ -136,10 +136,10 @@
 		7F1ADFA01F874F7D00C3F216 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7F1ADF9F1F874F7D00C3F216 /* ProductiveXcode.app */,
+				7F1ADF9F1F874F7D00C3F216 /* Runy's Plugins Host.app */,
 				7F1ADFB51F874F7D00C3F216 /* ProductiveXcodeTests.xctest */,
 				7F1ADFC01F874F7D00C3F216 /* ProductiveXcodeUITests.xctest */,
-				7F1ADFD61F87501200C3F216 /* RunWhenSave.appex */,
+				7F1ADFD61F87501200C3F216 /* Runy's Plugins.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -219,9 +219,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7F1ADF9E1F874F7D00C3F216 /* ProductiveXcode */ = {
+		7F1ADF9E1F874F7D00C3F216 /* Runy's Plugins Host */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F1ADFC91F874F7D00C3F216 /* Build configuration list for PBXNativeTarget "ProductiveXcode" */;
+			buildConfigurationList = 7F1ADFC91F874F7D00C3F216 /* Build configuration list for PBXNativeTarget "Runy's Plugins Host" */;
 			buildPhases = (
 				7F1ADF9B1F874F7D00C3F216 /* Sources */,
 				7F1ADF9C1F874F7D00C3F216 /* Frameworks */,
@@ -233,9 +233,9 @@
 			dependencies = (
 				7F1ADFE51F87501200C3F216 /* PBXTargetDependency */,
 			);
-			name = ProductiveXcode;
+			name = "Runy's Plugins Host";
 			productName = ProductiveXcode;
-			productReference = 7F1ADF9F1F874F7D00C3F216 /* ProductiveXcode.app */;
+			productReference = 7F1ADF9F1F874F7D00C3F216 /* Runy's Plugins Host.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7F1ADFB41F874F7D00C3F216 /* ProductiveXcodeTests */ = {
@@ -274,9 +274,9 @@
 			productReference = 7F1ADFC01F874F7D00C3F216 /* ProductiveXcodeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		7F1ADFD51F87501200C3F216 /* RunWhenSave */ = {
+		7F1ADFD51F87501200C3F216 /* Runy's Plugins */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F1ADFE71F87501200C3F216 /* Build configuration list for PBXNativeTarget "RunWhenSave" */;
+			buildConfigurationList = 7F1ADFE71F87501200C3F216 /* Build configuration list for PBXNativeTarget "Runy's Plugins" */;
 			buildPhases = (
 				7F1ADFD21F87501200C3F216 /* Sources */,
 				7F1ADFD31F87501200C3F216 /* Frameworks */,
@@ -286,9 +286,9 @@
 			);
 			dependencies = (
 			);
-			name = RunWhenSave;
+			name = "Runy's Plugins";
 			productName = RunWhenSave;
-			productReference = 7F1ADFD61F87501200C3F216 /* RunWhenSave.appex */;
+			productReference = 7F1ADFD61F87501200C3F216 /* Runy's Plugins.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
@@ -337,10 +337,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7F1ADF9E1F874F7D00C3F216 /* ProductiveXcode */,
+				7F1ADF9E1F874F7D00C3F216 /* Runy's Plugins Host */,
 				7F1ADFB41F874F7D00C3F216 /* ProductiveXcodeTests */,
 				7F1ADFBF1F874F7D00C3F216 /* ProductiveXcodeUITests */,
-				7F1ADFD51F87501200C3F216 /* RunWhenSave */,
+				7F1ADFD51F87501200C3F216 /* Runy's Plugins */,
 			);
 		};
 /* End PBXProject section */
@@ -421,17 +421,17 @@
 /* Begin PBXTargetDependency section */
 		7F1ADFB71F874F7D00C3F216 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7F1ADF9E1F874F7D00C3F216 /* ProductiveXcode */;
+			target = 7F1ADF9E1F874F7D00C3F216 /* Runy's Plugins Host */;
 			targetProxy = 7F1ADFB61F874F7D00C3F216 /* PBXContainerItemProxy */;
 		};
 		7F1ADFC21F874F7D00C3F216 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7F1ADF9E1F874F7D00C3F216 /* ProductiveXcode */;
+			target = 7F1ADF9E1F874F7D00C3F216 /* Runy's Plugins Host */;
 			targetProxy = 7F1ADFC11F874F7D00C3F216 /* PBXContainerItemProxy */;
 		};
 		7F1ADFE51F87501200C3F216 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7F1ADFD51F87501200C3F216 /* RunWhenSave */;
+			target = 7F1ADFD51F87501200C3F216 /* Runy's Plugins */;
 			targetProxy = 7F1ADFE41F87501200C3F216 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -677,7 +677,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F1ADFC91F874F7D00C3F216 /* Build configuration list for PBXNativeTarget "ProductiveXcode" */ = {
+		7F1ADFC91F874F7D00C3F216 /* Build configuration list for PBXNativeTarget "Runy's Plugins Host" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F1ADFCA1F874F7D00C3F216 /* Debug */,
@@ -704,7 +704,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F1ADFE71F87501200C3F216 /* Build configuration list for PBXNativeTarget "RunWhenSave" */ = {
+		7F1ADFE71F87501200C3F216 /* Build configuration list for PBXNativeTarget "Runy's Plugins" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F1ADFE81F87501200C3F216 /* Debug */,
