@@ -98,51 +98,53 @@
     //NSString *UTI     = buffer.contentUTI;
     //NSString *content = buffer.completeBuffer;
     NSMutableArray *lines = buffer.lines;
-    
-    [invocation.buffer.selections sortUsingComparator:^NSComparisonResult(XCSourceTextRange *  _Nonnull obj1, XCSourceTextRange *  _Nonnull obj2) {
+
+    [invocation.buffer.selections sortUsingComparator:^NSComparisonResult (XCSourceTextRange*_Nonnull obj1, XCSourceTextRange*_Nonnull obj2) {
         if (obj1.end.line < obj2.start.line) {
             return NSOrderedAscending;
-        }else  if (obj1.start.line == obj2.end.line) {
+        } else if (obj1.start.line == obj2.end.line) {
             return NSOrderedSame;
-        }else {
+        } else {
             return NSOrderedDescending;
         }
     }];
-    
+
     for (XCSourceTextRange *range in invocation.buffer.selections) {
         if (range.start.line == range.end.line) {
-            NSString * text = lines[range.start.line];
-            NSRange replaceRange = NSMakeRange(range.start.column, range.end.column-range.start.column);
-            NSString * replace = [text substringWithRange:replaceRange];
-            NSString * replaced = [NSString stringWithFormat:@"%@%@%@", begin, replace, end];
-            text = [text stringByReplacingCharactersInRange:replaceRange withString:replaced];
+            NSString *text         = lines[range.start.line];
+            NSRange   replaceRange = NSMakeRange(range.start.column, range.end.column - range.start.column);
+            NSString *replace      = [text substringWithRange:replaceRange];
+            NSString *replaced     = [NSString stringWithFormat:@"%@%@%@", begin, replace, end];
+            text                    = [text stringByReplacingCharactersInRange:replaceRange withString:replaced];
             lines[range.start.line] = text;
-        }else {
-            [lines insertObject:end atIndex:range.end.line+1];
+        } else {
+            [lines insertObject:end atIndex:range.end.line + 1];
             [lines insertObject:begin atIndex:range.start.line];
         }
     }
-    
+
     completionHandler(nil);
 }
 
 - (void)formatWithInvocation:(XCSourceEditorCommandInvocation*)invocation completionHandler:(void (^)(NSError*_Nullable nilOrError))completionHandler {
     NSString *UTI = invocation.buffer.contentUTI;
 
-    BOOL support = [UTI isEqualToString:@"public.c-header"]
-        || [UTI isEqualToString:@"public.objective-c-source"]
-        || [UTI isEqualToString:@"public.objective-cpp-source"];
-    
+    BOOL      support = [UTI isEqualToString:@"public.c-header"]
+                        || [UTI isEqualToString:@"public.objective-c-source"]
+                        || [UTI isEqualToString:@"public.objective-cpp-source"]
+                        || [UTI isEqualToString:@"public.objective-c-plus-plus-source"]
+                        || [UTI isEqualToString:@"public.precompiled-c-header"];
+
     if (!support) {
         NSDictionary *userInfo = @{NSLocalizedDescriptionKey:[NSString stringWithFormat:@"unsupport file type. %@",UTI]};
         NSError      *error    = [NSError errorWithDomain:@"com.wangchao.xcodeplugin" code:1 userInfo:userInfo];
         completionHandler(error);
         return;
     }
-    
+
     NSString *tempFolder = NSHomeDirectory();
-    NSString *tempPath = [tempFolder stringByAppendingPathComponent:@"uncrustify-derive"];
-    NSError  *error    = nil;
+    NSString *tempPath   = [tempFolder stringByAppendingPathComponent:@"uncrustify-derive"];
+    NSError  *error      = nil;
     [[NSFileManager defaultManager] createDirectoryAtPath:tempPath withIntermediateDirectories:YES attributes:nil error:&error];
     if (error) {
         completionHandler(error);
@@ -153,8 +155,11 @@
         tempPath = [tempPath stringByAppendingPathComponent:@"temp.h"];
     } else if ([UTI isEqualToString:@"public.objective-c-source"]) {
         tempPath = [tempPath stringByAppendingPathComponent:@"temp.m"];
+    }else if ([UTI isEqualToString:@"public.objective-c-plus-plus-source"]) {
+        tempPath = [tempPath stringByAppendingPathComponent:@"temp.mm"];
+    }else if ([UTI isEqualToString:@"public.precompiled-c-header"]) {
+        tempPath = [tempPath stringByAppendingPathComponent:@"temp.pch"];
     } else {
-        
     }
 
     NSString *content = invocation.buffer.completeBuffer;
