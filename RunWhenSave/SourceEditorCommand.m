@@ -133,6 +133,8 @@
                         || [UTI isEqualToString:@"public.objective-c-source"]
                         || [UTI isEqualToString:@"public.objective-cpp-source"]
                         || [UTI isEqualToString:@"public.objective-c-plus-plus-source"]
+                        || [UTI isEqualToString:@"public.c-plus-plus-source"]
+                        || [UTI isEqualToString:@"public.c-source"]
                         || [UTI isEqualToString:@"public.precompiled-c-header"];
 
     if (!support) {
@@ -157,6 +159,10 @@
         tempPath = [tempPath stringByAppendingPathComponent:@"temp.m"];
     }else if ([UTI isEqualToString:@"public.objective-c-plus-plus-source"]) {
         tempPath = [tempPath stringByAppendingPathComponent:@"temp.mm"];
+    }else if ([UTI isEqualToString:@"public.c-plus-plus-source"]) {
+        tempPath = [tempPath stringByAppendingPathComponent:@"temp.cpp"];
+    }else if ([UTI isEqualToString:@"public.c-source"]) {
+        tempPath = [tempPath stringByAppendingPathComponent:@"temp.c"];
     }else if ([UTI isEqualToString:@"public.precompiled-c-header"]) {
         tempPath = [tempPath stringByAppendingPathComponent:@"temp.pch"];
     } else {
